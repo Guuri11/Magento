@@ -6,7 +6,6 @@
  */
 -->
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
-    <preference for="Magento\Catalog\Api\ProductRepositoryInterface" type="UdemyMagento\FirstModule\Model\CustomImplementation"/>
     <preference for="UdemyMagento\FirstModule\Api\PencilInterface" type="UdemyMagento\FirstModule\Model\Pencil"/>
     <preference for="UdemyMagento\FirstModule\Api\BookInterface" type="UdemyMagento\FirstModule\Model\Book"/>
     <preference for="UdemyMagento\FirstModule\Api\ColorInterface" type="UdemyMagento\FirstModule\Model\Yellow"/>
