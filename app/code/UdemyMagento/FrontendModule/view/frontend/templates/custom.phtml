@@ -1,2 +1,11 @@
 <?php
-echo "hello world";
+$hello = $block->getHelloWorld();
+$array = $block->getArray();
+?>
+<h1><?php echo $hello;?></h1>
+<ul>
+    <?php foreach ($array as $key=>$value){?>
+        <li><?php echo $key.': '.$value;?></li>
+    <?php }?>
+
+</ul>
