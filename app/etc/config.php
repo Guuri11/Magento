@@ -252,6 +252,7 @@ return [
         'UdemyMagento_Attribute' => 1,
         'UdemyMagento_DataBaseModule' => 1,
         'UdemyMagento_FirstModule' => 1,
+        'UdemyMagento_FrontendModule' => 1,
         'UdemyMagento_RequestFlow' => 1,
         'Amazon_Core' => 1,
         'Amazon_Login' => 1,
