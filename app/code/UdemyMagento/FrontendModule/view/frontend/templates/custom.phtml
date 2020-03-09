@@ -1,11 +1,22 @@
 <?php
 $hello = $block->getHelloWorld();
 $array = $block->getArray();
+
+$hello_argument = $this->getShowHello();
+$array_argument = $this->getShowArray();
 ?>
 <h1><?php echo $hello;?></h1>
 <ul>
     <?php foreach ($array as $key=>$value){?>
         <li><?php echo $key.': '.$value;?></li>
     <?php }?>
-
 </ul>
+<hr/>
+<h3><?php echo $hello_argument;?></h3>
+<ul>
+    <?php foreach ($array_argument as $key=>$value){?>
+        <li><?php echo $key.': '.$value;?></li>
+    <?php }?>
+</ul>
+<hr/>
+

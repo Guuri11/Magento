@@ -9,7 +9,16 @@
     <body>
         <referenceContainer name="content">
             <block class="UdemyMagento\FrontendModule\Block\CustomBlock" name="index"
-                   template="UdemyMagento_FrontendModule::custom.phtml"/>
+                   template="UdemyMagento_FrontendModule::custom.phtml">
+                <arguments>
+                    <argument name="show_hello" xsi:type="string">Hello world from an argument</argument>
+                    <argument name="show_array" xsi:type="array">
+                        <item name="key1" xsi:type="string">val1(array argument)</item>
+                        <item name="key2" xsi:type="string">val2(array argument)</item>
+                        <item name="key3" xsi:type="string">val3(array argument)</item>
+                    </argument>
+                </arguments>
+            </block>
         </referenceContainer>
     </body>
 </page>
