@@ -1,9 +1,12 @@
 <?php
-$hello = $block->getHelloWorld();
-$array = $block->getArray();
+$view = $block->getData('view_model');
+$hello = $view->getHelloWorld();
+$array = $view->getArray();
 
-$hello_argument = $this->getShowHello();
-$array_argument = $this->getShowArray();
+//$hello_argument = $this->getShowHello();
+//$array_argument = $this->getShowArray();
+
+$producto = $view->getProduct();
 ?>
 <h1><?php echo $hello;?></h1>
 <ul>
@@ -12,11 +15,12 @@ $array_argument = $this->getShowArray();
     <?php }?>
 </ul>
 <hr/>
-<h3><?php echo $hello_argument;?></h3>
+<!--<h3><?php /*echo $hello_argument;*/?></h3>
 <ul>
-    <?php foreach ($array_argument as $key=>$value){?>
-        <li><?php echo $key.': '.$value;?></li>
-    <?php }?>
+    <?php /*foreach ($array_argument as $key=>$value){*/?>
+        <li><?php /*echo $key.': '.$value;*/?></li>
+    <?php /*}*/?>
 </ul>
-<hr/>
-
+<hr/>-->
+<h2>View Model</h2>
+<p><?php echo $producto;?></p>
