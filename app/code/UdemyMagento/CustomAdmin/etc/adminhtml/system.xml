@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <tab id="Custom_Admin" sortOrder="120" translate="label">
+            <label>Custom Admin</label>
+        </tab>
+        <section id="First_Section" translate="label" sortOrder="100" showInWebsite="1" showInStore="1" showInDefault="1">
+            <label>First Section</label>
+            <tab>Custom_Admin</tab>
+            <resource>Magento_Backend::admin</resource>
+            <group id="First_Group" showInWebsite="1" showInStore="1" showInDefault="1">
+                <label>First Group</label>
+                <field id="First_Field" showInWebsite="1" showInStore="1" showInDefault="1" translate="label"
+                type="text" sortOrder="100">
+                    <label>First Text Field</label>
+                </field>
+                <field id="Second_Field" showInWebsite="1" showInStore="1" showInDefault="1" translate="label"
+                       type="select" sortOrder="110">
+                    <label>First select Field</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="Third_Field" showInWebsite="1" showInStore="1" showInDefault="1" translate="label"
+                       type="multiselect" sortOrder="110">
+                    <label>Second select Field</label>
+                    <source_model>UdemyMagento\CustomAdmin\Model\AdminArray</source_model>
+                </field>
+                <field id="Fourth_Field" showInWebsite="1" showInStore="1" showInDefault="1" translate="label"
+                       type="select" sortOrder="110">
+                    <label>Third select Field</label>
+                    <source_model>UdemyMagento\CustomAdmin\Model\AdminArray</source_model>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>

@@ -250,6 +250,7 @@ return [
         'Magento_WishlistGraphQl' => 1,
         'Magento_WishlistSampleData' => 1,
         'UdemyMagento_Attribute' => 1,
+        'UdemyMagento_CustomAdmin' => 1,
         'UdemyMagento_DataBaseModule' => 1,
         'UdemyMagento_FirstModule' => 1,
         'UdemyMagento_FrontendModule' => 1,

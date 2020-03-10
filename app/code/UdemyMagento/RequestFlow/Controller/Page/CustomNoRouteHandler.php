@@ -14,7 +14,7 @@ class CustomNoRouteHandler implements NoRouteHandlerInterface
      */
     public function process(\Magento\Framework\App\RequestInterface $request)
     {
-        $request->setRouteName('route-error')->setControllerName('page')->setActionName('customnoroute');
+        $request->setRouteName('route_error')->setControllerName('page')->setActionName('customnoroute');
         return true;
     }
 }

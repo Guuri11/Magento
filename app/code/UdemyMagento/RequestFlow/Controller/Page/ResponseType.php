@@ -58,6 +58,6 @@ class ResponseType extends Action
 
         // Redirect response type
         $result = $this->redirectFactory->create();
-        return $result->setPath('route-error/page/customnoroute');
+        return $result->setPath('route_error/page/customnoroute');
     }
 }
