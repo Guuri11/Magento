@@ -9,4 +9,7 @@
             </argument>
         </arguments>
     </type>
+
+    <preference for="Mastering\SampleModule\Api\ItemRepositoryInterface" type="Mastering\SampleModule\Model\ItemRepository"/>
+    <preference for="Mastering\SampleModule\Api\ItemInterface" type="Mastering\SampleModule\Model\Item"/>
 </config>

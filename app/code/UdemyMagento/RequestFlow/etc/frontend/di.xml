@@ -11,7 +11,7 @@
             <argument name="handlerClassesList" xsi:type="array">
                 <item name="handlerinfo" xsi:type="array">
                     <item name="class" xsi:type="string">UdemyMagento\RequestFlow\Controller\Page\CustomNoRouteHandler</item>
-                    <item name="sortOrder" xsi:type="string">50</item>
+                    <item name="sortOrder" xsi:type="string">900</item>
                 </item>
             </argument>
         </arguments>
@@ -23,7 +23,7 @@
                 <item name="custom" xsi:type="array">
                     <item name="class" xsi:type="string">UdemyMagento\RequestFlow\Controller\Page\Router</item>
                     <item name="disable" xsi:type="boolean">false</item>
-                    <item name="sortOrder" xsi:type="string">60</item>
+                    <item name="sortOrder" xsi:type="string">900</item>
                 </item>
             </argument>
         </arguments>
