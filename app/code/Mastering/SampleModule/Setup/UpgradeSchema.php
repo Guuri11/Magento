@@ -28,6 +28,15 @@ class UpgradeSchema implements UpgradeSchemaInterface
                     'comment'=>'Item description']
             );
         }
+
+        if (version_compare($context->getVersion(),'1.0.3','<')){
+            $setup->getConnection()->addColumn(
+                $setup->getTable('sales_order_grid'),
+                'base_tax_amount',
+                ['type'=>Table::TYPE_DECIMAL,
+                    'comment'=>'Base Tax Amount']
+            );
+        }
         $setup->endSetup();
     }
 }
