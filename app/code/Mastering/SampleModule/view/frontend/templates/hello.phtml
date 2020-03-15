@@ -1,6 +1,8 @@
 <?php
 /**  @var \Mastering\SampleModule\Block\Hello $block **/
 
+echo $block->getLabel();
+
 foreach ($block->getItems() as $item){
     echo '<p>'.$item->getName().': '.$item->getDescription().'</p>';
 }
