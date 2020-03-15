@@ -27,3 +27,4 @@ Magento 2 project following some Udemy tutorials
 * Customazing adminhtml
 * Basics of cron jobs
 * Basics of ui components
+* Basics of js conf
